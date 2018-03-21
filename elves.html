@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hvad handler siden om? - seo optiering til google">
+    <title>Kids coolshop</title>
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="skov">
+    <section class="container" id="elver-hus">
+        <nav id="">
+            <div class="elver-knap"><a href="index.html"><img src="images/elv1.png" alt="eksempel 1"></a>
+            </div>
+            <div class="elver-knap"><a href="#"><img src="images/elv2.png" alt="eksempel 2"></a>
+            </div>
+            <div class="elver-knap zd"><a href="#"><img src="images/elv3.png" alt="eksempel 3"></a>
+            </div>
+            <div class="pil elver-knap"><a href="index.html"><img src="images/pil.png" alt="pil"></a>
+            </div>
+        </nav>
+        <section id="logo">
+            <img src="images/elveslogo.png">
+        </section>
+        
+        <button id="knap1">Hide</button>
+        
+        <iframe id="vid-drage" width="560" height="315" src="https://www.youtube.com/embed/Nu-tUTcWtY8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-slot" width="560" height="315" src="https://www.youtube.com/embed/zEzAm6Ru24M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-ballon" width="560" height="315" src="https://www.youtube.com/embed/OGdVXD4Z2Ro?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-aira" width="1600" height="768" src="images/aira-info.png" style="-webkit-transform:scale(0.5);-moz-transform-scale(0.5);"></iframe>
+
+        
+        
+        <section id="info">
+            <div class="video elver">
+                <p>Drage</p>
+                <img id="drage" src="images/drage.png">
+            </div>
+            <div class="video elver">
+                <p>Hus</p>
+                <img id="slot" src="images/hus.png">
+            </div>
+            <div class="video elver">
+                <p>Luftballon</p>
+                <img id="ballon" src="images/luftballon.png">
+            </div>
+            <div class="video elver">
+                <p>Vindalfen Aira</p>
+                <img id="aira" src="images/elv4.png">
+            </div>
+        </section>
+
+
+    </section>
+    <!-- jQuery scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- dit script herfra -->
+    <script>
+        /**
+         * Dit script herfra
+         **/
+  $(document).ready(function(){
+$( "#drage" ).click(function() {
+  $( "#vid-drage" ).show(function() {
+    // Animation complete.
+      $( "#knap1" ).show()
+        $( "#vid-slot" ).fadeOut()
+        $( "#vid-ballon" ).fadeOut()
+        $( "#vid-aira" ).fadeOut()
+  });
+        });
+$( "#slot" ).click(function() {
+  $( "#vid-slot" ).show(function() {
+    // Animation complete.
+      $( "#knap1" ).show()
+        $( "#vid-drage" ).fadeOut()
+        $( "#vid-ballon" ).fadeOut()
+        $( "#vid-aira" ).fadeOut()
+  });
+        });
+$( "#ballon" ).click(function() {
+  $( "#vid-ballon" ).show(function() {
+    // Animation complete.
+      $( "#knap1" ).show()
+        $( "#vid-drage" ).fadeOut()
+        $( "#vid-slot" ).fadeOut()
+        $( "#vid-aira" ).fadeOut()
+  });
+        });
+$( "#aira" ).click(function() {
+  $( "#vid-aira" ).show(function() {
+    // Animation complete.
+      $( "#knap1" ).show()
+        $( "#vid-drage" ).fadeOut()
+        $( "#vid-slot" ).fadeOut()
+        $( "#vid-ballon" ).fadeOut()
+  });
+        });
+$( "#knap1" ).click(function() {
+  $( "#vid-drage" ).hide(function() {
+      // Animation complete.
+      $( "#vid-slot" ).fadeOut() 
+      $( "#vid-ballon" ).fadeOut() 
+      $( "#vid-aira" ).fadeOut() 
+      $( "#knap" ).fadeOut()
+      $( "#knap1" ).fadeOut()
+  });
+        });
+        });
+    </script>
+</body>
+
+</html>

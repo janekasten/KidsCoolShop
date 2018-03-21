@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hvad handler siden om? - seo optiering til google">
+    <title>Kids coolshop</title>
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="garage">
+    <section class="container" id="bilen">
+        <nav>
+            <div><a href="elves.html"><img src="images/bil-eksempel1.png" alt="eksempel 1"></a>
+            </div>
+            <div><a href="#"><img src="images/bil-eksempel2.png" alt="eksempel 2"></a>
+            </div>
+            <div  class="zd"><a href="#"><img src="images/bil-eksempel3.png" alt="eksempel 3"></a>
+            </div>
+            <div class="pil"><a href="elves.html"><img src="images/pil.png" alt="pil"></a>
+            </div>
+        </nav>
+        <section id="logo">
+            <img src="images/logo-nikko-racing.png">
+        </section>
+        
+        <button id="knap">Hide</button>
+        
+        <iframe id="vid-vand" width="560" height="315" src="https://www.youtube.com/embed/dPpJRC72xuQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-hast" width="560" height="315" src="https://www.youtube.com/embed/5i6xOW5rCfo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-off" width="560" height="315" src="https://www.youtube.com/embed/e_-9iJBagsI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-trick" width="560" height="315" src="https://www.youtube.com/embed/FmCslEs6H6Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe id="vid-trailer" width="560" height="315" src="https://www.youtube.com/embed/jOuIrfZOZRs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <section id="info">
+            <div class="video">
+                <p>Vand</p>
+                <img id="vand" src="images/bil-vand.jpg">
+            </div>
+            <div class="video">
+                <p>Hastighed</p>
+                <img id="hast" src="images/bil-hast.jpg">
+            </div>
+            <div class="video">
+                <p>Off-road</p>
+                <img id="off" src="images/bil-off.jpg">
+            </div>
+            <div class="video">
+                <p>Tricks</p>
+                <img id="trick" src="images/bil-t.jpg">
+            </div>
+                        <div class="video">
+                <p>Trailer</p>
+                <img id="trailer" src="images/bil-trail.jpg">
+            </div>
+
+        </section>
+        <section id="farve">
+            <img src="images/farver.png">
+        </section>
+
+    </section>
+
+    <!-- jQuery scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- dit script herfra -->
+    <script>
+        /**
+         * Dit script herfra
+         **/
+        $(document).ready(function(){
+$( "#vand" ).click(function() {
+  $( "#vid-vand" ).show(function() {
+    // Animation complete.
+      $( "#knap" ).show()
+      $( "#vid-hast" ).hide() 
+      $( "#vid-off" ).hide() 
+      $( "#vid-trick" ).hide() 
+      $( "#vid-trailer" ).hide() 
+
+  });
+        });
+$( "#hast" ).click(function() {
+  $( "#vid-hast" ).show(function() {
+    // Animation complete.
+        $( "#knap" ).show()
+      $( "#vid-vand" ).hide() 
+      $( "#vid-off" ).hide() 
+      $( "#vid-trick" ).hide() 
+      $( "#vid-trailer" ).hide() 
+  });
+        });
+$( "#off" ).click(function() {
+  $( "#vid-off" ).show(function() {
+    // Animation complete.
+      $( "#knap" ).show()
+      $( "#vid-hast" ).fadeOut() 
+      $( "#vid-vand" ).fadeOut() 
+      $( "#vid-trick" ).fadeOut() 
+      $( "#vid-trailer" ).fadeOut() 
+  });
+        });
+$( "#trick" ).click(function() {
+  $( "#vid-trick" ).show(function() {
+    // Animation complete.
+          $( "#knap" ).show()
+      $( "#vid-hast" ).fadeOut() 
+      $( "#vid-off" ).fadeOut() 
+      $( "#vid-vand" ).fadeOut() 
+      $( "#vid-trailer" ).fadeOut() 
+  });
+        });
+$( "#trailer" ).click(function() {
+  $( "#vid-trailer" ).show(function() {
+      // Animation complete.
+      $( "#knap" ).show()
+      $( "#vid-hast" ).fadeOut() 
+      $( "#vid-off" ).fadeOut() 
+      $( "#vid-trick" ).fadeOut() 
+      $( "#vid-vand" ).fadeOut() 
+  });
+        });
+$( "#knap" ).click(function() {
+  $( "#vid-trailer" ).hide(function() {
+      // Animation complete.
+      $( "#vid-hast" ).fadeOut() 
+      $( "#vid-off" ).fadeOut() 
+      $( "#vid-trick" ).fadeOut() 
+      $( "#vid-vand" ).fadeOut()
+      $( "#knap" ).fadeOut()
+  });
+        });
+        });
+    </script>
+</body>
+</html>

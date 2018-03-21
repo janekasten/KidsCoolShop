@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<style>
+	    /* dine styles */
+	</style>
+</head>
+<body>
+
+<!--///// indhold /////-->
+
+<div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+ 
+<button id="opener">Open Dialog</button>
+
+
+<!--///// slut /////-->
+
+<!-- jQuery scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<!-- dit script herfra -->
+<script>
+    /**
+     * Dit script herfra
+     **/
+
+    // dialog animated
+     $( function() {
+
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+    
+</script>
+</body>
+</html>

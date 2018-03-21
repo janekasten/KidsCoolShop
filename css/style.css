@@ -1,0 +1,190 @@
+body {
+    box-sizing: border-box;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#garage {
+    background-image: url(../images/garage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+#skov {
+    background-image: url(../images/elverbaggrund.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 5%;
+    width: 100%;
+    height: 42em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav . ." "logo . . ." ". . . ." ". . . ." "info info info farve";
+}
+
+#bilen {
+    background-image: url(../images/bilen.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 150px 190px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+nav div {
+    background-image: url(../images/bil-knap.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+}
+
+.elver-knap {
+    background-image: url(../images/lillaboks.png);
+}
+
+nav img {
+    width: 75%;
+    height: auto;
+    margin: 15%;
+}
+
+.elver-knap img {
+    width: 40%;
+    margin: 25% 30%;
+}
+
+.zd{ 
+    z-index: 2;
+}
+.pil {
+    width: 25%;
+    margin: auto auto auto -35px;
+    padding: 5%;
+    z-index: 1;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#logo img {
+    width: 135%
+}
+
+#info {
+    grid-area: info;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-weight: bolder;
+    color: white;
+}
+#knap{
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 740px;
+    display: none;
+}
+#knap1{
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 740px;
+    display: none;
+}
+iframe{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 170px;
+    z-index: 2;
+}
+
+#vid-vand{
+    z-index: 1;
+    display: none;
+}
+#vid-hast{
+    z-index: 2;
+    display: none;
+}
+#vid-off{
+    z-index: 3;
+    display: none;
+}
+#vid-trick{
+    z-index: 4;
+    display: none;
+}
+#vid-trailer{
+    z-index: 5;
+    display: none;
+}
+
+#vid-drage{
+    z-index: 1;
+    display: none;
+}
+#vid-slot{
+    z-index: 2;
+    display: none;
+}
+#vid-ballon{
+    z-index: 3;
+    display: none;
+}
+#vid-aira{
+    margin-left: -380px;
+    margin-top: -51px;
+    z-index: 4;
+    background-size: cover;
+    display: none;
+}
+.video {
+    background-image: url(../images/bil-knap.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    text-align: center;
+}
+
+.elver {
+    background-image: url(../images/lillaboks.png);
+    width: 20%;
+}
+
+.video img {
+    width: 75%;
+    margin: -5% auto 15% auto
+}
+
+.elver img {
+    width: 40%;
+}
+
+#farve {
+    grid-area: farve;
+}
+
+#farve img {
+    width: 100%;
+    margin: 10% 2%;
+}
